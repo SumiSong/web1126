@@ -147,7 +147,7 @@ html,body{
 /*About 페이지*/
 .container .section-About{
     height: 400px;
-    /*background-image: url(images/logo_all.png);*/
+    background-image: url(images/ex.png);
     opacity: 0.9;
     background-repeat : no-repeat;
     background-size: cover;
@@ -181,6 +181,10 @@ html,body{
     padding-right: 100px;
 }
 
+.container-fluid {
+    min-height: 100vh;
+}
+
 .container-fluid .row h1{
     font-size: 41px;
 }
@@ -195,8 +199,34 @@ html,body{
     list-style-type: none;
 }
 
-.container-fluid {
-    min-height: 100vh;
+.std-container{
+    display: flex;
+}
+
+.std-box{
+    height: 350px;
+    width: 100%;
+    border: 1px solid black;
+    flex: 1;
+    
+}
+
+.std-box .std-personalbox{
+    height: 350px;
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.std-box .std-personalbox .personalimg{
+    height: 240px;
+    width: 50%;
+    background-image: url(images/mujin.PNG);
+
 }
 
 
