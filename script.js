@@ -40,7 +40,7 @@ function navigateToSchedule() {
 }
 
 function Home() {
-    window.location.href = "main.html";
+    window.location.href = "index.html";
 }
 
 function goHomeButton() {
