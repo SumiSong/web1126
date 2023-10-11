@@ -1,3 +1,7 @@
+//변수 선언 : var, const, let
+// 변수에 값을 저장하는 것을 할당, 변수에 저장된 값을 읽어 들이는 것을 참조, 변수명을 
+// 자바스크립트 엔진에 알리는 것을 선언
+
 window.onload = function(){
     Particles.init({
     selector: '.background',
@@ -47,5 +51,14 @@ function goHomeButton() {
     window.location.href = "About.html";
 }
 
+//Actitivy 페이지 자동 슬라이드 구현 
+const imageContainer = document.querySelector('.image-container');
+const overlayLink = document.querySelector('.overlay-link');
 
+imageContainer.addEventListener('mouseover', () => {
+    overlayLink.style.display = 'block';
+});
 
+imageContainer.addEventListener('mouseout', () => {
+    overlayLink.style.display = 'none';
+});
