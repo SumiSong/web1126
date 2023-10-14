@@ -14,12 +14,12 @@ window.onload = function(){
     });
 }
 
+
 //이벤트 리스너 정리
 document.getElementById("AboutLink").addEventListener("click", navigateToAbout);
 document.getElementById("MemberLink").addEventListener("click", navigateToMember);
 document.getElementById("PublicationsLink").addEventListener("click", navigateToPublications);
 document.getElementById("ActivityLink").addEventListener("click", navigateToActivity);
-document.getElementById("ScheduleLink").addEventListener("click", navigateToSchedule);
 document.getElementById("goHomeButton").addEventListener("click", goHomeButton);
 document.getElementById("AI&DE-Home").addEventListener("click", Home);
 
@@ -39,10 +39,6 @@ function navigateToActivity() {
     window.location.href = "Activity.html";
 }
 
-function navigateToSchedule() {
-    window.location.href = "Schedule.html";
-}
-
 function Home() {
     window.location.href = "index.html";
 }
@@ -51,14 +47,4 @@ function goHomeButton() {
     window.location.href = "About.html";
 }
 
-//Actitivy 페이지 자동 슬라이드 구현 
-const imageContainer = document.querySelector('.image-container');
-const overlayLink = document.querySelector('.overlay-link');
-
-imageContainer.addEventListener('mouseover', () => {
-    overlayLink.style.display = 'block';
-});
-
-imageContainer.addEventListener('mouseout', () => {
-    overlayLink.style.display = 'none';
-});
+//Actitivy 페이지 
