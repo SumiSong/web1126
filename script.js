@@ -20,12 +20,12 @@ document.getElementById("AboutLink").addEventListener("click", navigateToAbout);
 document.getElementById("MemberLink").addEventListener("click", navigateToMember);
 document.getElementById("PublicationsLink").addEventListener("click", navigateToPublications);
 document.getElementById("ActivityLink").addEventListener("click", navigateToActivity);
-document.getElementById("goHomeButton").addEventListener("click", goHomeButton);
+document.getElementById("buttonHomeLink").addEventListener("click", goHomeButton);
 document.getElementById("AI&DE-Home").addEventListener("click", Home);
 
 function navigateToAbout() {
     window.location.href = "About.html";
-}
+}   
 
 function navigateToMember() {
     window.location.href = "Member.html";
@@ -47,4 +47,27 @@ function goHomeButton() {
     window.location.href = "About.html";
 }
 
-//Actitivy 페이지 
+//Actitivy 페이지 모달창 
+
+function openModal(ModalID) {
+    if(ModalID === 'Modal1' || ModalID === 'Modal2' || ModalID === 'Modal3' || ModalID === 'Modal4'){
+        document.getElementById(ModalID).style.display = 'block';
+        document.body.classList.add('modal-open');
+    }
+    else{
+        console.error("Invalid KEY");
+    }
+}
+
+function closeModal(ModalID) {
+    if(ModalID === 'Modal1' || ModalID ===  'Modal2' || ModalID ===  'Modal3' || ModalID ===  'Modal4'){
+        document.getElementById(ModalID).style.display = 'none';
+        document.body.classList.remove('modal-open');
+    }
+    else{
+        console.error("Invalid KEY");
+    }
+}
+
+
+
