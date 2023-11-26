@@ -159,7 +159,7 @@ body.modal-open {
 }
 
 .container .section-About h2{
-    color: black;
+    color: white;
     text-align: center;
     font-size: 30px; 
     height : 400px;
@@ -226,12 +226,8 @@ body.modal-open {
     line-height: 3;
 }
 
-.div-content1{
-    background-color: rgba(247, 247, 247, 0.895);
-}
-
-.div-content2{
-    background-color: rgb(252, 249, 249);
+.div-content{
+    background-color: rgba(251, 251, 251);
 }
 
 .container-fluid .row ul{
@@ -272,7 +268,8 @@ body.modal-open {
 .section-Publications{
     height: 200px;
     width: 100%;
-    background-image: url(images/ex.png);
+    /*background-image: url(images/ex.png);*/
+    background-color: white;
     opacity: 0.9;
     background-repeat : no-repeat;
     background-size: cover;
@@ -340,6 +337,7 @@ body.modal-open {
 .album-row{
     padding-left: 30%;
     padding-right: 30%;
+    /* border: 1px solid blue; */
 }
 
 .Activityimg{
@@ -353,10 +351,17 @@ body.modal-open {
     display: flex;
 }
 
+/* .img1-2{
+    border: 1px solid black;
+    display: flex;
+    transform: translate(90%);
+    width: 60%;
+} */
+
 .img2-1{
     width: 800%;
     display: flex;
-    position: relative;
+    position: relative; 
     /* border: 1px solid red; */
 }
 
@@ -366,6 +371,7 @@ body.modal-open {
     height: 270px;
     /* background-color:#1fdfdf; */
 }
+
 
 .overlay-link {
     position: absolute;
@@ -406,7 +412,9 @@ body.modal-open {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 800px;
+    transform: translate(-50%, -90%); /*모듈창열었을때 위치설정 가운데로*/
     background-color: white;
     padding: 20px;
     border-radius: 5px;

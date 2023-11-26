@@ -50,7 +50,7 @@ function goHomeButton() {
 //Actitivy 페이지 모달창 
 
 function openModal(ModalID) {
-    if(ModalID === 'Modal1' || ModalID === 'Modal2' || ModalID === 'Modal3' || ModalID === 'Modal4'){
+    if(ModalID === 'Modal1' || ModalID === 'Modal2'|| ModalID === 'Modal3'|| ModalID === 'Modal4'){
         document.getElementById(ModalID).style.display = 'block';
         document.body.classList.add('modal-open');
     }
@@ -60,7 +60,7 @@ function openModal(ModalID) {
 }
 
 function closeModal(ModalID) {
-    if(ModalID === 'Modal1' || ModalID ===  'Modal2' || ModalID ===  'Modal3' || ModalID ===  'Modal4'){
+    if(ModalID === 'Modal1'|| ModalID === 'Modal2'|| ModalID === 'Modal3'|| ModalID === 'Modal4'){
         document.getElementById(ModalID).style.display = 'none';
         document.body.classList.remove('modal-open');
     }
